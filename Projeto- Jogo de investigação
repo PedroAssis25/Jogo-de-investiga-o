@@ -1,0 +1,111 @@
+#include <stdio.h> //biblioteca de comunicação do usuario
+#include <stdlib.h> //biblioteca de alocação do espaço de memoria 
+#include  <locale.h> //biblioteca de alocação de texto por região 
+#include <string.h> //biblioteca responsável por cuidadar das string
+
+int pedro()//Função responsalvel por cadastrar os usuarios no sistema
+{
+ printf("Pedro Alonso foi visto entrando no museu e saindo do\nmesmo com algum obejto de grande porte em sua mão no\ndia da morte de Barbara.\n\n");
+ 
+ system("pause");                                        
+ 
+}
+
+ int bernado()
+ {  
+ 	printf("Bernado foi visto pelas cameras de segurança saindo da casa de Barbara pouco\nantes da mesma ser assasinada, as cameras tambem mostram que ele não\nvoltou pra casa naquela noite.\n\n");
+ 	
+ 	system("pause");
+ }
+ 
+ int jack()
+ {
+ 	printf("Jack Assis é o irmão mais velho da vitima, nesse momento ele se encontra\nfora do país porem a mensagens no ceular de Barbara que indica que ele\nretornou dias antes de sua morte.\n\n");
+ 	
+ 	system("pause");
+ 	
+ }
+ int bruna()
+ {
+ 	printf("Bruna Johns é a melhor amiga da vitíma, porem foi\nindicado que elas se afastaram a pouco tempo\npor conta do atual relacionamento de Bruna\njá que quem ela esta namorando é o ex da vitíma.\n\n");
+ 	
+ 	system("pause");
+ }
+ 
+ int frederico()
+ {
+ 	printf("Frederico Junior é o dono do museu e por enquanto não a indicações de envolvimento com o crime, mas ainda está\nsob investigações por cont do sumiço repentino das chaves do local.\n\n");
+ 	
+ 	system("pause");
+ }
+ 
+int main()
+{
+	int opcao=0;
+	int laco=1;
+	
+	for(laco=1;laco=1;)
+	
+	
+
+	{
+	
+
+	setlocale(LC_ALL, "portuguese");
+	
+	printf("#Quem matou a Barbara#\n\n");//TItulo do minigame
+	printf("<RELATORIO DO CRIME>\n\n");
+	printf("Arma do crime:\n\n");
+	printf("-Uma lança de um antigo museu\n\n");
+	printf("possiveís suspeitos:\n\n");
+	printf("\t1- Pedro Aonso<Ex de barbara e funcionario do museu da cidade>\n\n");
+	printf("\t2- Bernado Portugal<Amigo gay da vitima/ultima pessoa a ver ela antes de sua morte>\n\n");
+	printf("\t3- Jack Assis <Irmão da vitima/se encontra fora do país>\n\n");
+	printf("\t4- Bruna Johns<Melhor amiga da vitíma/atual namorada de Pedro Alonso>\n\n ");
+	printf("\t5- Frederico junior<Dono do museu onde se mantinha a arma do crime>\n\n");
+	printf("Digite o numero do arquivo que deseja ler:\n\n");
+	
+
+	
+	scanf("%d",&opcao);//Opções possíveis 
+	
+	system("cls");//Responsavel por limpar a tela 
+	
+	switch(opcao)//Inicio da seleção do menu
+	{
+	 case 1:
+     pedro();//Chamada de funções
+	 system("pause");
+	 break;
+	 
+	 case 2: 
+	 bernado();
+	 system("pause");
+     break;
+     
+     case 3:
+     jack();
+     system("pause");
+     break;
+     
+     case 4:
+     bruna();
+     system("pause");
+     break;
+     
+     case 5:
+     frederico();
+     system("pause");
+     break;
+     
+	 default:
+     printf("Essa opção não está disponível\n");//Fim da seleção
+   	 system("pause");
+   	 break;
+   	}
+   	
+   	
+   	
+   }
+}
+	
